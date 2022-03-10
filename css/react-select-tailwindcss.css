@@ -1,0 +1,49 @@
+.react-select-container {
+    @apply focus-visible:border-0 rounded-xl focus:outline-none !important;
+}
+
+.react-select__indicator-separator {
+    @apply !hidden;
+}
+
+.react-select__dropdown-indicator {
+    @apply !text-slate-400;
+}
+.react-select__multi-value {
+    @apply !rounded-md overflow-hidden !bg-slate-100 !text-slate-800;
+}
+.react-select__multi-value__label {
+    @apply !bg-slate-100 !text-slate-800;
+}
+.react-select__multi-value__remove {
+    @apply !bg-slate-100 !text-slate-800;
+}
+.react-select__clear-indicator {
+    @apply !hidden;
+}
+
+.react-select__control {
+    @apply focus:!ring-0 !h-11 !border-gray-300 focus:!outline-none !rounded-xl overflow-hidden;
+}
+.react-select__control--is-focused {
+    @apply !shadow-none !ring !ring-cyan-100 !border !border-cyan-400;
+}
+
+.react-select__value-container {
+    @apply !bg-white;
+}
+.react-select__indicators {
+    @apply bg-white;
+}
+.react-select__menu {
+    @apply !bg-white !z-50 !rounded-xl overflow-hidden !shadow-sm !transition !duration-200 !border;
+}
+.react-select__menu-list {
+    @apply !bg-white;
+}
+.react-select__option {
+    @apply font-medium tracking-tighter !text-sm hover:!bg-cyan-500 hover:!text-white;
+}
+.react-select__option--is-focused {
+    @apply !bg-cyan-500 !text-white;
+}
