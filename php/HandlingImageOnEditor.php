@@ -45,14 +45,15 @@ trait HandlingImageOnEditor
         return $dom->saveHTML();
     }
 
-    public function removeImageFromDomImage($data, $path)
+    public function removeImageFromDomImage($path)
     {
-        $dom = new \DOMDocument;
-        libxml_use_internal_errors(true);
-        $dom->loadHTML($data, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
-        $images = $dom->getElementsByTagName('img');
-        foreach ($images as $key => $img) {
-            Storage::delete($path);
-        }
+        Storage::deleteDirectory($path);
+        // $dom = new \DOMDocument;
+        // libxml_use_internal_errors(true);
+        // $dom->loadHTML($fieldBody, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+        // $images = $dom->getElementsByTagName('img');
+        // foreach ($images as $key => $img) {
+        //     Storage::delete($path);
+        // }
     }
 }
