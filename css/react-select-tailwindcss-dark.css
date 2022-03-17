@@ -1,0 +1,53 @@
+.react-select-container {
+    @apply focus-visible:border-0 rounded-xl focus:outline-none !important;
+}
+
+.react-select__indicator-separator, .react-select__clear-indicator {
+    @apply !hidden;
+}
+
+.react-select__dropdown-indicator {
+    @apply !text-gray-400 dark:!text-gray-400;
+}
+.react-select__multi-value {
+    @apply !rounded-md overflow-hidden !bg-gray-100 dark:!bg-gray-800 !text-gray-800 dark:!text-gray-200;
+}
+.react-select__multi-value__label {
+    @apply !bg-gray-100 !text-gray-800 dark:!bg-gray-800 dark:!text-gray-100;
+}
+.react-select__multi-value__remove {
+    @apply !bg-gray-100 !text-gray-800 dark:!bg-gray-800 dark:!text-gray-100;
+}
+
+.react-select__control {
+    @apply focus:!ring-0 !h-11 !border-gray-300 dark:!text-gray-100 focus:!outline-none dark:!bg-gray-900 dark:!border-gray-800 !rounded-xl overflow-hidden;
+}
+.react-select__control--is-focused {
+    @apply !shadow-none !ring !ring-cyan-100 dark:!ring-cyan-800 !border !border-cyan-400 dark:!border-cyan-500;
+}
+
+.react-select__input-container, .react-select__single-value {
+    @apply !text-gray-800 dark:!text-gray-200;
+}
+
+.react-select__value-container {
+    @apply !bg-white dark:!bg-gray-900 dark:!text-gray-200;
+}
+.react-select__placeholder {
+    @apply !text-gray-500 dark:!text-gray-400;
+}
+.react-select__indicators {
+    @apply !bg-white dark:!bg-gray-900 dark:!text-gray-300;
+}
+.react-select__menu {
+    @apply !bg-white dark:!bg-gray-900 dark:!border-gray-800 !z-50 !rounded-xl overflow-hidden !shadow-sm !transition !duration-200 !border;
+}
+.react-select__menu-list {
+    @apply !bg-white dark:!bg-gray-900 dark:!text-white;
+}
+.react-select__option {
+    @apply font-medium tracking-tighter !text-sm hover:!bg-cyan-500 hover:!text-white;
+}
+.react-select__option--is-focused {
+    @apply !bg-cyan-500 !text-white;
+}
