@@ -1,0 +1,34 @@
+/* CKEDITOR */
+.ck.ck-content {
+    @apply prose dark:prose-slate dark:prose-strong:text-gray-200 dark:!bg-gray-900 dark:text-white prose-img:w-full prose-img:rounded-xl prose-img:shadow-sm prose-a:text-teal-500 h-96 max-w-none;
+}
+
+.ck.ck-toolbar {
+    @apply dark:bg-gray-900 dark:border-gray-800;
+}
+
+.ck.ck-toolbar__separator {
+    @apply !bg-gray-300 dark:!bg-gray-600;
+}
+
+.ck.ck-button {
+    @apply text-gray-900 dark:text-gray-200;
+}
+
+.ck.ck-button:not(.ck-disabled):hover:hover, a.ck.ck-button:not(.ck-disabled):hover:hover {
+    @apply bg-gray-100 dark:bg-gray-800 dark:text-gray-100 text-gray-900;
+}
+
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+    @apply border-gray-300 dark:border-gray-800;
+}
+
+.ck.ck-toolbar.ck-toolbar_grouping {
+    @apply border-gray-300 dark:border-gray-800 rounded-xl;
+}
+.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-blurred {
+    @apply shadow-none border-gray-300 dark:border-gray-800;
+}
+.ck.ck-content.ck-editor__editable.ck-rounded-corners.ck-editor__editable_inline.ck-focused {
+    @apply shadow-none border-gray-300 dark:border-gray-800;
+}
